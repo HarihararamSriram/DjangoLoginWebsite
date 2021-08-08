@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div#msgcenter{
+    text-align: center;
+    resize: vertical;
+    overflow: auto;
+}
+div#error{
+    font-family : 'Consolas', 'Courier Now', monospace;
+    font-size : 75px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-image: linear-gradient(180deg, orangered, orange ); 
+    text-align: center;
+}
+
+img#errorimg{
+    position : absolute;
+    padding-top: 25px;
+    padding-left: 30%;
+}
+img#userimg{
+    position: relative;
+    margin-left: 42.5%;
+    background: transparent;
+}
+div#errortext{
+    font-size:25px;
+    background-image: linear-gradient(white, skyblue);
+    height: 80%;
+    background-size: cover;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, fantasy;
+}
+
+span#welcome{
+    top: 5% ;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index : 1;
+    position: absolute;
+    color: brown;
+    font-family: sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 25px;
+}
+
+.box#choice1
+{
+    width: 350px;
+    padding-left : 35px;
+}
+
+.box#boxreg{
+    padding-top: 50px;
+    height: 250px;
+}
+
+div.box#boxsuccess{
+    background: transparent;
+    color: rgb(224, 240, 4);
+    width : 800px;
+    font-family: Trebuchet MS, Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    height: 150px;
+}
+
+.box {
+    position: absolute;
+    top: 50% ;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    height: 125px;
+    width: 500px;
+    padding-left : 35px; 
+    padding-top: 75px;
+    padding-bottom: 100px;
+    background: linear-gradient(45deg, red, orange);
+    font-family: Helvetica, Arial, sans-serif;
+    border-radius: 10px;
+    font-size: 26.46px;
+    box-shadow: 0 0 8px 2px black;
+}
+
+.box.login{
+    padding-top: 35px;
+    padding-bottom: 175px;
+    height: 150px;
+    font-size: 23.5px;
+}
+
+.box.verify1{
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 30px;
+    font-size: 23.5px;
+    height: 150px;
+}
+
+.box.verify2{
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 30px;
+    font-size: 23.5px;
+    height: 75px;
+}
+
+div.normal{
+    font-size: 17.5px;
+    text-align: center;
+    font-family: zillaslab,palatino,"Palatino Linotype",serif;
+}
+
+
+#forgotpass{
+    font-size: 17.5px;
+}
+
+input {
+    border-radius: 5px;
+    width:300px;
+    background-color: paleturquoise;
+    border-color: orange;
+}
+
+input#passcode{
+    margin-left: 21px;
+    height: 30px;
+    padding-left: 5px;
+}
+
+input#uname {
+    margin-left: 16.5px;
+    width:300px;
+    height: 30px;
+    background-color: paleturquoise;
+    padding-left: 5px;
+}
+
+input.dob{
+    margin-left: 81.5px;
+    height: 30px ;
+}
+
+input.newpass1{
+    margin-left: 75px;
+}
+
+input#name{
+    margin-left: 60px;
+    height: 30px;
+    padding-left: 5px;
+}
+
+input#logout{
+    position: absolute;
+    z-index: 1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 35 px;
+    width: 100px;
+    left: 90%;
+    top: 1%;
+    font-family: Helvetica, Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    background: linear-gradient(45deg, red, orange);
+    box-shadow: 0 0 5px 1px black;
+}
+
+input.submit{
+    background-color:darkblue;
+    width : 100px;
+    height: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 0.5cm;
+    margin-left: 35%;
+    margin-top: 1.cm;
+    color: rgb(138, 245, 16);
+    box-shadow: 0 0 5px 1px black;
+}
+
+input.submit.completed{
+    width: 150px;
+}
+
+input.submit1.submitb{
+    margin-top: 0px;
+}
+
+input.submit1{
+    position: absolute;
+    font-family: Helvetica, Tahoma, Geneva, Verdana;
+    background-color: darkgrey;
+    font-weight: bold;
+    font-size: 0.8cm;
+    margin-left: 55px;
+    margin-top: 125px;
+    box-shadow: 0 0 5px 2px rgb(63, 15, 15);
+    width: 200px;
+}
+
+
+div.banner-image{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url("ocean.jfif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(4px);
+    height: 100%;
+}
+
+div#finalpage{
+    background-image: url("Ocean1.jpg");
+}

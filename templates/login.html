@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Login</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}" type="text/css">    
+    </head>    
+    <body>
+        
+        <div class="banner-image"></div> <!Background>
+        
+        <span id="welcome"><h1>LOGIN TO THE OCEAN</h1></span>
+        
+        <div class="box login">
+            <div>
+                <img src="{% static 'Usericon3.png' %}" height="50" width="50" id="userimg">
+                <br><br>
+                <form method="POST" action="login/getin">
+                    {% csrf_token %}
+                    Username: <input id="uname" placeholder="Username" name="uname">
+                    <br>
+                    <br>
+                    Password: <input id="passcode" type="password" placeholder="Password" name="pass">
+                    <br>
+                    <br>
+                    <input type="submit" class="submit">
+                </form>
+            </div>
+            <br>
+            <div id = "forgotpass">
+                <a href="login/changepass1">Forgot Password?</a>
+            </div>
+        </div>
+
+    </body>
+</html

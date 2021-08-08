@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>New password</title>
+    {%load static%}
+    <link rel="stylesheet" href="{% static 'styles.css' %}" type="text/css">
+    </head>
+    <body>
+        <div class="banner-image"></div> <!Background>
+
+        <span id="welcome"><h1>NEW PASSWORD</h1></span>
+
+        <div class = "box verify2">
+            <div class="normal">
+            Please type in your new password.
+            </div> <br>
+            <form method="POST" action="http://127.0.0.1:8000/login">
+                {% csrf_token %}
+                Password: <input id="passcode" type="password" placeholder="Password" name="pass">
+                <br><br>
+                <input type="hidden" name="uname" value="{{uname}}"> <! The username of the new password>
+                <input type="hidden" name="route" value="1"> <! To access the login function>
+                <input type="submit" class="submit completed" value="COMPLETED">
+            </form>
+        </div>
+    </body>
+</html>

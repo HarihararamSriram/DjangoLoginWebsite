@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Login/Register</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'styles.css'%}">
+    </head>
+    <body>
+        <span id="welcome"><h1>Welcome to THE OCEAN</h1></span>
+        <div class="banner-image"></div>
+
+        <div id="choice1" class="box">
+            <form action="login">
+                <input type="submit" class="submit1 submita" value="Login">
+            </form>
+            <form action="register">
+                <input type="submit" class="submit1 submitb" value="Register">
+            </form>
+        </div>
+    </body>
+</html>

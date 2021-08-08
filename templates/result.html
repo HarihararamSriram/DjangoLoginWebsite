@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Logged in</title> 
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'styles.css' %}">
+    </head>
+    <body>
+        <div class="banner-image" id="finalpage"></div>
+        <span id="welcome"><h1>Welcome to THE OCEAN</h1></span>
+        <div id="logout">
+            <form action="http://127.0.0.1:8000/">
+                <input type="submit" value="Logout" id="logout">
+            </form>
+        </div>
+        <div class="box" id="boxsuccess">
+            Welcome {{user}}, you are one of the many drops of this OCEAN. 
+            <br><br>
+            <div id="msgcenter">Have a wonderful day!</div>
+        </div>
+    </body>
+</html>

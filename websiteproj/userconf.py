@@ -1,0 +1,2 @@
+username = "MYSQL"
+password = "sqlpassword"

@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>That's an error</title>
+    {%load static%}
+    <link rel="stylesheet" href="{% static 'styles.css'%}">
+    </head>
+    <body>
+        <img src="{% static 'Error.png' %}" id="errorimg" height="100px" width="100px">
+        <div id="Error"> 
+            Error
+        </div>
+        <br>
+        <div id="Errortext">{{error}}</div>
+    </body>
+</html>
