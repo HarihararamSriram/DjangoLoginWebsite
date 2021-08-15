@@ -54,9 +54,9 @@ def usercollector(request):
     password = request.POST["pass"]
     name = request.POST["name"]
     date = request.POST["date"]
-    insert_query = User.objects.create(uname = username, name=name, password=password, dob=date)
     #insert_str = f"INSERT INTO userinfo VALUES ('{username}', '{name}', '{date}', '{password}')"
     try:    
+        insert_query = User.objects.create(uname = username, name=name, password=password, dob=date)
         insert_query.save() #inserting the user to database.
         #mycur.execute(insert_str)
     except:
