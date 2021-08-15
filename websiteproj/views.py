@@ -103,7 +103,7 @@ def verifier(request):
     '''
     username = request.POST["uname"]
     password = request.POST["pass"]
-    URL = request.POST["URL"] + "home"
+    URL = request.POST["URL"] + "/home"
     error1, error2 = "The username doesn't exist", "The password doesn't match."
     password_and_name = User.objects.filter(uname = username)
     if(password_and_name.exists() == False):
