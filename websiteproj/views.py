@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from datetime import date
 from .models import User_of_ocean as User
+from django.shortcuts import redirect
 import time
 # Create your views here.
 import pymysql
@@ -39,6 +40,9 @@ def home(request):
 
 def registeruser(request):
     return render(request=request, template_name="Register.html", context={"today":today})
+
+def logout(request):
+    return redirect('/')
 
 def usercollector(request):
     """
