@@ -13,7 +13,7 @@
             <div class="normal">
             Please type in your new password.
             </div> <br>
-            <form method="POST" action="http://127.0.0.1:8000/login">
+            <form method="POST" action="/login">
                 {% csrf_token %}
                 Password: <input id="passcode" type="password" placeholder="Password" name="pass">
                 <br><br>
