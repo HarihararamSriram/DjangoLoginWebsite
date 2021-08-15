@@ -99,6 +99,7 @@ def verifier(request):
     '''
     username = request.POST["uname"]
     password = request.POST["pass"]
+    URL = request.POST["URL"]
     error1, error2 = "The username doesn't exist", "The password doesn't match."
     password_and_name = User.objects.filter(uname = username)
     if(password_and_name.exists() == False):
@@ -117,7 +118,7 @@ def verifier(request):
         #error = "The password doesn't match."
         #return render(request = request, template_name="error1.html", context={"error":error})
     
-    return render(request = request, template_name="result.html", context={"user":name})
+    return render(request = request, template_name="result.html", context={"user":name, "URL":URL})
 
 def changepass1(request):
     return render(request=request, template_name="newpass1.html", context={"today":today})

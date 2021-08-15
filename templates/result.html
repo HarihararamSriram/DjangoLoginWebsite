@@ -8,8 +8,8 @@
         <div class="banner-image" id="finalpage"></div>
         <span id="welcome"><h1>Welcome to THE OCEAN</h1></span>
         <div id="logout">
-            <form action="/home">
-                <input type="submit" value="Logout" id="logout">
+            <form method="POST" action="{{URL}}">
+                <input type="submit" value="Logout" id="logout" name="next">
             </form>
         </div>
         <div class="box" id="boxsuccess">
