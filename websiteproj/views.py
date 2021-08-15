@@ -49,6 +49,7 @@ def usercollector(request):
     url: /register.
     This function collects user info and saves it in the database after registration.
     """
+    URL = request.POST["URL"] + "/home"
     username = request.POST["uname"]
     password = request.POST["pass"]
     name = request.POST["name"]
@@ -63,7 +64,7 @@ def usercollector(request):
         return render(request = request, template_name="error1.html", context={"error":error} )
     #userdb.commit()
     print("Done")
-    return render(request=request, template_name="result.html", context={"user":name})
+    return render(request=request, template_name="result.html", context={"user":name, "URL":URL})
     
     
 def passwebsite(request):
