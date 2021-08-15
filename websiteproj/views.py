@@ -80,6 +80,7 @@ def passwebsite(request):
             update_query = User.objects.filter(uname=uname).update(password=password)
             for objects in update_query:
                 objects.save()
+            redirect('/')
             #update_qry = f'UPDATE {tablename} SET password = "{password}" WHERE uname="{uname}"'
             #mycur.execute(update_qry)
             #userdb.commit()  # mycur = userdb.cursor()
